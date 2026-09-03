@@ -83,14 +83,15 @@ def render(body: str) -> str:
     return "\n".join(out)
 
 
-def page(title: str, category: str, summary: str, updated: str, content: str) -> str:
+def page(title: str, category: str, summary: str, updated: str, cover: str, content: str) -> str:
     summary = summary or "OneKey 产品与使用资料整理"
     updated = updated or "基于 OneKey 官方公开资料整理"
+    cover_html = f'<div class="guide-cover"><img src="{escape(cover)}" alt="{escape(title)}"></div>' if cover else ""
     return f'''<!doctype html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="{escape(summary)}"><title>{escape(title)}｜OneKey 小手册</title><link rel="stylesheet" href="../styles.css"></head>
 <body class="guide-page"><header class="site-header"><div class="container nav"><a class="brand" href="../">OneKey <span>小手册</span></a><a class="back" href="../">返回首页</a></div></header>
-<main><section class="guide-hero"><div class="container guide-hero-inner"><p class="eyebrow">{escape(category)}</p><h1>{escape(title)}</h1><p class="guide-summary">{escape(summary)}</p><div class="guide-meta"><span>{escape(updated)}</span><span>阅读指南</span></div></div></section>
+<main><section class="guide-hero"><div class="container guide-hero-inner"><div><p class="eyebrow">{escape(category)}</p><h1>{escape(title)}</h1><p class="guide-summary">{escape(summary)}</p><div class="guide-meta"><span>{escape(updated)}</span><span>阅读指南</span></div></div>{cover_html}</div></section>
 <section class="container guide-layout"><article class="article-body">{content}<div class="article-source">本文基于 OneKey 官方公开资料整理，具体功能和界面以当前版本为准。</div><a class="back-link" href="../">← 返回 OneKey 小手册</a></article><aside class="guide-aside"><strong>本文内容</strong><p>按照页面中的标题和步骤阅读即可。</p><a href="../#faq">查看常见问题 →</a></aside></section></main>
 <footer class="site-footer"><div class="container"><strong>OneKey 小手册</strong><p>独立的 OneKey 产品与使用资料整理站</p></div></footer></body></html>'''
 
@@ -99,6 +100,6 @@ for source in sorted(ARTICLES.glob("*.md")):
     meta, body = parse_frontmatter(source.read_text(encoding="utf-8"))
     slug = source.stem.replace(" ", "-")
     target = GUIDES / f"{slug}.html"
-    target.write_text(page(meta.get("title", source.stem), meta.get("category", "使用指南"), meta.get("summary", ""), meta.get("updated", ""), render(body)), encoding="utf-8")
+    target.write_text(page(meta.get("title", source.stem), meta.get("category", "使用指南"), meta.get("summary", ""), meta.get("updated", ""), meta.get("cover", ""), render(body)), encoding="utf-8")
     count += 1
 print(f"generated {count} article pages")
