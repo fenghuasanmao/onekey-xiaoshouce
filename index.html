@@ -3,68 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="OneKey 小手册：简单了解 OneKey 产品，快速学会 OneKey App 和硬件钱包的基本使用。">
-  <title>OneKey 小手册｜简单、清晰地开始使用 OneKey</title>
+  <meta name="description" content="OneKey 小手册：用简单、清晰的方式了解 OneKey 产品和硬件钱包。">
+  <title>OneKey 小手册｜简单了解，轻松上手</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="./">OneKey <span>小手册</span></a>
-      <nav aria-label="主导航">
-        <a href="#start">初步了解</a>
-        <a href="#products">选择产品</a>
-        <a href="#faq">常见问题</a>
-      </nav>
+      <nav aria-label="主导航"><a href="#start">初步了解</a><a href="#products">选择产品</a><a href="#faq">常见问题</a></nav>
     </div>
   </header>
-
   <main>
     <section class="hero">
-      <div class="container hero-inner">
-        <div><p class="eyebrow">ONEKEY 使用整理</p>
-          <h1>简单、清晰地开始使用 OneKey</h1>
-          <p class="lead">从选择产品、初始化钱包，到使用 OneKey App，这里用容易理解的方式整理常见操作。</p>
-          <div class="hero-actions"><a class="button primary" href="#start">我是第一次使用</a><a class="button secondary" href="#products">我想选择产品</a></div>
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">ONEKEY 使用整理</p>
+          <h1>简单了解，轻松上手 OneKey</h1>
+          <p class="lead">从认识硬件钱包，到选择设备和完成第一次设置，用更容易理解的方式整理 OneKey 的常见使用路径。</p>
+          <div class="hero-actions"><a class="button primary" href="#start">先了解基础</a><a class="button secondary" href="#products">查看产品</a></div>
         </div>
+        <aside class="hero-note" aria-label="新手路线">
+          <strong>不知道从哪里开始？</strong>
+          <p>按照这条路线阅读，不需要一次看完所有内容。</p>
+          <div class="route-list"><a href="#start"><span>01　先认识 OneKey</span><span>→</span></a><a href="#products"><span>02　选择适合的设备</span><span>→</span></a><a href="#faq"><span>03　遇到问题再查找</span><span>→</span></a></div>
+        </aside>
       </div>
     </section>
 
     <section class="container section" id="start">
-      <div class="section-heading"><h2>初步了解</h2><p>先了解 OneKey、硬件钱包和开源。</p></div>
+      <div class="section-heading"><h2>初步了解</h2><p>先理解基本概念，再开始操作设备。</p></div>
       <div class="card-grid">
-        <a class="card" href="guides/01-了解OneKey.html"><h3>了解 OneKey</h3><p>先认识 OneKey、OneKey App 和硬件钱包。</p><span>开始了解 →</span></a>
-        <a class="card" href="guides/02-了解硬件钱包.html"><h3>了解硬件钱包</h3><p>了解硬件钱包是什么，以及它和软件钱包的区别。</p><span>开始了解 →</span></a>
-        <a class="card" href="guides/03-了解开源.html"><h3>了解开源</h3><p>了解 OneKey 开源的意义，以及普通用户需要知道什么。</p><span>开始了解 →</span></a>
+        <a class="card" href="guides/01-了解OneKey.html"><h3>了解 OneKey</h3><p>认识 OneKey、OneKey App 和硬件钱包之间的关系。</p><span>开始了解　→</span></a>
+        <a class="card" href="guides/02-了解硬件钱包.html"><h3>了解硬件钱包</h3><p>了解硬件钱包是什么，以及它和软件钱包的区别。</p><span>开始了解　→</span></a>
+        <a class="card" href="guides/03-了解开源.html"><h3>了解开源</h3><p>用简单的方式理解开源代码和安全透明之间的关系。</p><span>开始了解　→</span></a>
       </div>
     </section>
 
     <section class="tint section" id="products">
-      <div class="container"><div class="section-heading"><h2>选择适合你的设备</h2><p>根据自己的需要选择产品，再查看 OneKey 官网的详细介绍。</p></div>
+      <div class="container">
+        <div class="section-heading"><h2>选择产品</h2><p>先看产品定位和核心特性，再前往 OneKey 官网了解完整信息。</p></div>
         <h3 class="subheading">硬件钱包</h3>
-        <div class="product-grid product-grid-wide">
-          <div class="product product-image"><img src="assets/products/onekey-pro-user.jpg" alt="OneKey Pro"><h3>OneKey Pro</h3><p>大屏触摸、指纹解锁和多种连接方式，适合希望获得完整硬件体验的用户。</p><div class="product-links"><a href="https://onekey.so/products/onekey-pro/" target="_blank" rel="noopener">了解相关产品 →</a><a href="guides/05-开始设置Pro.html">开始设置 →</a></div></div>
-          <div class="product product-image"><img src="assets/products/classic-1s-user.jpg" alt="OneKey Classic 1S"><h3>OneKey Classic 1S</h3><p>轻薄便携，支持蓝牙和 USB-C，适合日常使用。</p><div class="product-links"><a href="https://onekey.so/products/onekey-classic-1s-series/" target="_blank" rel="noopener">了解相关产品 →</a><a href="guides/04-开始设置.html">开始设置 →</a></div></div>
-          <div class="product product-image"><img src="assets/products/classic-1s-pure-user.jpg" alt="OneKey Classic 1S Pure"><h3>Classic 1S Pure</h3><p>无电池设计，适合长期保存资产。</p><div class="product-links"><a href="https://onekey.so/products/onekey-classic-1s-series/" target="_blank" rel="noopener">了解相关产品 →</a><a href="guides/04-开始设置.html">开始设置 →</a></div></div>
-          <div class="product product-image"><img src="assets/products/classic-1s-btc-user.jpg" alt="OneKey Classic 1S Pure BTC-Only"><h3>Classic 1S Pure / BTC-Only</h3><p>无电池的比特币专用版本，适合只使用 Bitcoin 的用户。</p><div class="product-links"><a href="https://onekey.so/products/onekey-classic-1s-pure-btc-only/" target="_blank" rel="noopener">了解相关产品 →</a><a href="guides/04-开始设置.html">开始设置 →</a></div></div>
+        <div class="product-grid">
+          <article class="product"><div class="product-media"><img src="assets/products/onekey-pro-user.jpg" alt="OneKey Pro"></div><div class="product-copy"><h3>OneKey Pro</h3><p>大屏触摸、指纹解锁和多种连接方式，适合希望获得完整硬件体验的用户。</p><div class="product-links"><a href="https://onekey.so/products/onekey-pro/" target="_blank" rel="noopener">了解产品　→</a><a href="guides/05-开始设置Pro.html">开始设置　→</a></div></div></article>
+          <article class="product"><div class="product-media"><img src="assets/products/classic-1s-user.jpg" alt="OneKey Classic 1S"></div><div class="product-copy"><h3>Classic 1S</h3><p>轻薄便携，支持蓝牙和 USB-C，适合日常使用。</p><div class="product-links"><a href="https://onekey.so/products/onekey-classic-1s-series/" target="_blank" rel="noopener">了解产品　→</a><a href="guides/04-开始设置.html">开始设置　→</a></div></div></article>
+          <article class="product"><div class="product-media"><img src="assets/products/classic-1s-pure-user.jpg" alt="OneKey Classic 1S Pure"></div><div class="product-copy"><h3>Classic 1S Pure</h3><p>无电池设计，适合长期保存资产。</p><div class="product-links"><a href="https://onekey.so/products/onekey-classic-1s-series/" target="_blank" rel="noopener">了解产品　→</a><a href="guides/04-开始设置.html">开始设置　→</a></div></div></article>
+          <article class="product"><div class="product-media"><img src="assets/products/classic-1s-btc-user.jpg" alt="OneKey Classic 1S Pure BTC-Only"></div><div class="product-copy"><h3>Classic 1S Pure / BTC-Only</h3><p>无电池的比特币专用版本，适合只使用 Bitcoin 的用户。</p><div class="product-links"><a href="https://onekey.so/products/onekey-classic-1s-pure-btc-only/" target="_blank" rel="noopener">了解产品　→</a><a href="guides/04-开始设置.html">开始设置　→</a></div></div></article>
         </div>
-        <h3 class="subheading">其他产品</h3>
-        <div class="product-grid product-grid-wide">
-          <div class="product"><div class="product-placeholder">L</div><h3>OneKey Lite</h3><p>NFC 加密备份卡，适用于 OneKey App 和 OneKey Pro。</p><div class="product-links"><a href="https://onekey.so/products/onekey-lite/" target="_blank" rel="noopener">了解相关产品 →</a><a href="guides/04-开始设置.html">开始设置 →</a></div></div>
-          <div class="product product-image"><img src="assets/products/onekey-keytag-user.jpg" alt="OneKey KeyTag"><h3>OneKey KeyTag</h3><p>钛合金恢复短语备份工具，适合长期保存恢复短语。</p><div class="product-links"><a href="https://onekey.so/products/onekey-keytag/" target="_blank" rel="noopener">了解相关产品 →</a><a href="guides/04-开始设置.html">开始设置 →</a></div></div>
-          <div class="product product-image"><img src="assets/products/onekey-sifu-user.jpg" alt="OneKey Sifu"><h3>OneKey Sifu</h3><p>面向需要更多钱包管理支持的用户，具体服务以官网介绍为准。</p><div class="product-links"><a href="https://onekey.so/products/onekey-sifu/" target="_blank" rel="noopener">了解相关产品 →</a><a href="guides/04-开始设置.html">开始设置 →</a></div></div>
+        <h3 class="subheading" style="margin-top:42px">其他产品</h3>
+        <div class="product-grid">
+          <article class="product"><div class="product-placeholder" aria-hidden="true">L</div><div class="product-copy"><h3>OneKey Lite</h3><p>NFC 加密备份卡，适用于 OneKey App 和 OneKey Pro。</p><div class="product-links"><a href="https://onekey.so/products/onekey-lite/" target="_blank" rel="noopener">了解产品　→</a><a href="guides/04-开始设置.html">开始设置　→</a></div></div></article>
+          <article class="product"><div class="product-media"><img src="assets/products/onekey-keytag-user.jpg" alt="OneKey KeyTag"></div><div class="product-copy"><h3>OneKey KeyTag</h3><p>钛合金恢复短语备份工具，适合长期保存恢复短语。</p><div class="product-links"><a href="https://onekey.so/products/onekey-keytag/" target="_blank" rel="noopener">了解产品　→</a><a href="guides/04-开始设置.html">开始设置　→</a></div></div></article>
+          <article class="product"><div class="product-media"><img src="assets/products/onekey-sifu-user.jpg" alt="OneKey Sifu"></div><div class="product-copy"><h3>OneKey Sifu</h3><p>面向需要更多钱包管理支持的用户，具体服务以官网介绍为准。</p><div class="product-links"><a href="https://onekey.so/products/onekey-sifu/" target="_blank" rel="noopener">了解产品　→</a><a href="guides/04-开始设置.html">开始设置　→</a></div></div></article>
         </div>
+        <div class="compare-banner"><div><h3>想更直观地比较硬件钱包？</h3><p>查看主要型号的定位、连接方式和适合人群。</p></div><a class="button" href="product-compare.html">查看快速对比　→</a></div>
       </div>
     </section>
 
     <section class="container section" id="faq">
-      <div class="section-heading"><h2>常见问题</h2><p>先从这些常见问题开始了解。</p></div>
+      <div class="section-heading"><h2>常见问题</h2><p>遇到具体问题时，可以先从这里查找。</p></div>
       <div class="faq-list"><a href="guides/06-硬件钱包无法连接.html"><span>硬件钱包无法连接怎么办？</span><b>→</b></a><a href="guides/04-恢复短语-pin-passphrase.html"><span>恢复短语、PIN 和 Passphrase 有什么区别？</span><b>→</b></a><a href="guides/08-attach-to-pin.html"><span>什么是 Attach to PIN？</span><b>→</b></a><a href="guides/05-app恢复软件钱包.html"><span>如何在 OneKey App 中恢复软件钱包？</span><b>→</b></a><a href="guides/03-第一次使用硬件钱包.html"><span>第一次使用硬件钱包需要做什么？</span><b>→</b></a><a href="guides/07-pro与classic-1s怎么选.html"><span>OneKey Pro 和 Classic 1S 怎么选择？</span><b>→</b></a></div>
-      <a class="more-link" href="https://help.onekey.so/" target="_blank" rel="noopener">查看更多问题 →</a>
+      <a class="more-link" href="https://help.onekey.so/" target="_blank" rel="noopener">查看更多问题　→</a>
     </section>
-
   </main>
-
-  <footer class="site-footer"><div class="container"><div class="footer-links" aria-label="OneKey 官方链接"><a href="https://onekey.so/" target="_blank" rel="noopener" aria-label="OneKey 官方网站" title="OneKey 官方网站"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></a><a href="https://help.onekey.so/" target="_blank" rel="noopener" aria-label="OneKey 帮助中心" title="OneKey 帮助中心"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.6 2.6 0 1 1 4.1 2.1c-1 .7-1.6 1.1-1.6 2.4M12 17h.01"/></svg></a><a href="https://www.youtube.com/@onekeyhq" target="_blank" rel="noopener" aria-label="OneKey 官方 YouTube" title="OneKey 官方 YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="m10 9 5 3-5 3z"/></svg></a><a href="https://x.com/OneKeyCN" target="_blank" rel="noopener" aria-label="OneKey 官方推特（X）" title="OneKey 官方推特（X）"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4l14 16M19 4 5 20"/></svg></a></div></div></footer>
+  <footer class="site-footer"><div class="container"><div class="footer-links" aria-label="OneKey 官方链接"><a href="https://onekey.so/" target="_blank" rel="noopener" aria-label="OneKey 官方网站" title="OneKey 官方网站"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></a><a href="https://help.onekey.so/" target="_blank" rel="noopener" aria-label="OneKey 帮助中心" title="OneKey 帮助中心"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.6 2.6 0 1 1 4.1 2.1c-1 .7-1.6 1.1-1.6 2.4M12 17h.01"/></svg></a><a href="https://www.youtube.com/@onekeyhq" target="_blank" rel="noopener" aria-label="OneKey 官方 YouTube" title="OneKey 官方 YouTube"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="m10 9 5 3-5 3z"/></svg></a><a href="https://x.com/OneKeyCN" target="_blank" rel="noopener" aria-label="OneKey 官方 X" title="OneKey 官方 X"><svg viewBox="0 0 24 24"><path d="M5 4l14 16M19 4 5 20"/></svg></a></div></div></footer>
 </body>
 </html>
